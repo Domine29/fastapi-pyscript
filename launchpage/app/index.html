@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launchpage</title>
+    <link rel="stylesheet" href="/static/css/w3.css" />
+    <link rel="stylesheet" href="/static/css/pyscript.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-image: url("/static/images/pexels.jpg");
+        background-size: cover;
+        color: white;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .time-cont {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: center;
+      }
+    </style>
+    <script defer src="/static/python/pyscript.js"></script>
+  </head>
+  <body>
+    <main class="w3-display-container">
+      <div class="w3-display-middle">
+        <h1 class="w3-jumbo">Coming Soon!</h1>
+        <div class="time-cont">
+          <p id="time_p" class="w3-large w3-center">Testing</p>
+        </div>
+        <py-script>
+          time_p = Element('time_p')
+          time_p.write('Hello There')
+        </py-script>
+      </div>
+    </main>
+  </body>
+</html>
